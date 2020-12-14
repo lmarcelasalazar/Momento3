@@ -1,5 +1,6 @@
 <?php 
-
+session_start();
+$_SESSION['username']=$user;
 $user=$_POST['username'];
 $pass=$_POST['password'];
 
@@ -9,7 +10,7 @@ $res=mysqli_query($conn,$cons);
 
 $files=mysqli_num_rows($res);
 
-if ($files>0) {
+if ($files) {
     header("location:account.html");
 } else {
     echo("Error");

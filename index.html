@@ -7,10 +7,10 @@
   </head>
   <body id="container">
 
-    <div class="login-box">
+    <div class="login-box" action="validation.php" method="POST">
       <img src="img/icono.jpg" class="avatar" alt="Avatar Image">
       <h1>Login Here</h1>
-      <form action="php/validation.php" method="POST">
+      <form>
         <!-- USERNAME INPUT -->
         <label for="username">Username</label>
         <input type="text" placeholder="Enter Username" name="username">
@@ -19,7 +19,7 @@
         <input type="password" placeholder="Enter Password" name="password">
         <input type="submit"  value="Log In">
         <a href="#">Lost your Password?</a><br>
-        <a href="account.html">Don't have An account?</a>
+        <a href="#">Don't have An account?</a>
       </form>
     </div>
   </body>
